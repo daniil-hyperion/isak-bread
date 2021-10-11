@@ -1,0 +1,260 @@
+:root {
+	--main-color: #fff;
+	--border-color: #000;
+}
+a {
+	user-select: none;
+	text-decoration: none;
+	color: var(--border-color);
+}
+.header-map {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.wrapper-map {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	height: 150vh;
+}
+
+.wrapper-map__map-way {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+
+	width: 100%;
+	height: 100%;
+	margin-top: 8vh;
+	margin-bottom: 9vh;
+
+	background-image: url('../img/game/map.png');
+	background-attachment: local;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: scroll;
+}
+
+.wrapper-map__map-way__level {
+	position: absolute;
+
+	margin: 2vh 0;
+
+	background-size: 100%;
+
+	border-radius: 50%;
+
+	width: 2.5em;
+	height: 2.5em;
+}
+.wrapper-map__map-way__level:active {
+	background-image: url('../img/game/mufComplete.png');
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.wrapper-map__map-way__level:first-child {
+	margin-top: 9vh;
+}
+.wrapper-map__map-way__level:last-child {
+	margin-bottom: 4vh;
+}
+
+/* =========== */
+.game-msg {
+	display: none;
+	position: fixed;
+
+	top: 30vh;
+	width: 60%;
+	height: auto;
+
+	margin-left: calc(50% - 34%);
+	text-align: center;
+
+	padding: 1.5em 1em;
+	background-color: var(--main-color);
+	border-radius: 1em;
+	border: 2px dashed var(--head-color);
+	font-size: 1.2em;
+	-webkit-box-shadow: 0px 0px 37px -14px rgba(34, 60, 80, 0.69);
+	box-shadow: 0px 0px 37px -14px rgba(34, 60, 80, 0.69);
+
+	z-index: 999;
+}
+.pulse {
+	-webkit-box-shadow: 0 0 0 0 rgba(130, 31, 129, 1);
+	box-shadow: 0 0 0 0 rgba(130, 31, 129, 1);
+	-webkit-animation: pulse-orange 2s infinite;
+	animation: pulse-orange 2s infinite;
+	z-index: 990;
+}
+.pulse::after {
+	content: url('../img/game/arrow.png');
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-top: -50px;
+	z-index: 995;
+}
+@-webkit-keyframes pulse-orange {
+	0% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+		-webkit-box-shadow: 0 0 0 0 rgba(130, 31, 129, 0.7);
+		box-shadow: 0 0 0 0 rgba(130, 31, 129, 0.7);
+	}
+
+	70% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-box-shadow: 0 0 0 10px rgba(130, 31, 129, 0);
+		box-shadow: 0 0 0 10px rgba(130, 31, 129, 0);
+	}
+
+	100% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+		-webkit-box-shadow: 0 0 0 0 rgba(130, 31, 129, 0);
+		box-shadow: 0 0 0 0 rgba(130, 31, 129, 0);
+	}
+}
+
+@keyframes pulse-orange {
+	0% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+		-webkit-box-shadow: 0 0 0 0 rgba(130, 31, 129, 0.7);
+		box-shadow: 0 0 0 0 rgba(130, 31, 129, 0.7);
+	}
+
+	70% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-box-shadow: 0 0 0 10px rgba(130, 31, 129, 0);
+		box-shadow: 0 0 0 10px rgba(130, 31, 129, 0);
+	}
+
+	100% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+		-webkit-box-shadow: 0 0 0 0 rgba(130, 31, 129, 0);
+		box-shadow: 0 0 0 0 rgba(130, 31, 129, 0);
+	}
+}
+/* позиционирование уровней на игровой карте */
+
+#lvl500 {
+	top: 10vh;
+	right: 8%;
+}
+
+#lvl450 {
+	top: 28vh;
+	right: 30%;
+}
+#lvl400 {
+	top: 33vh;
+	right: 68%;
+}
+#lvl350 {
+	top: 49vh;
+	right: 60%;
+}
+/* центральный уровень */
+#lvl300 {
+	top: 62vh;
+	right: 20%;
+}
+
+#lvl250 {
+	top: 85vh;
+	right: 30%;
+}
+#lvl200 {
+	top: 95vh;
+	left: 17%;
+}
+#lvl150 {
+	bottom: -15vh;
+	left: 47%;
+}
+#lvl100 {
+	bottom: -32vh;
+	right: 9%;
+}
+
+.freemode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+
+	border-radius: 50%;
+
+	width: 100px;
+	height: 50px;
+	top: 50%;
+	left: 5%;
+	z-index: 1001;
+}
+
+.freemode img {
+	width: 50px;
+	height: 50px;
+}
+.freemode img:active {
+	transform: scale(0.8);
+}
+
+.title-fr-mode {
+	width: 100px;
+	padding: 0.5em 0.8em;
+	border-radius: 1em;
+	font-size: 0.8em;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+.messagePrize {
+	position: fixed;
+
+	text-align: center;
+
+	width: 80%;
+	height: auto;
+	padding: 1em;
+
+	background-color: #f3f3f3;
+	border-radius: 1em;
+
+	margin-top: -20vh;
+	margin-left: calc(50% - calc(40% + 1em));
+	z-index: 999;
+
+	transition: 1s;
+}
+.messagePrize p {
+	padding: 1em;
+}
+.btn-redirect {
+	width: 40%;
+	padding: 0.5em 1em;
+	background-color: #f9b004;
+	border-radius: 1em;
+
+	color: #fff;
+	font-weight: bold;
+	margin-left: calc(50% - calc(20% + 1em));
+
+	text-decoration: none;
+}
+.btn-redirect:active {
+	transform: scale(0.9);
+}

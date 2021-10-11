@@ -1,0 +1,45 @@
+[{
+        "itemName": "item1",
+        "itemType": "tokens",
+        "itemTitle": "Бесплатный кофе",
+        "itemPrize": "100",
+        "itemDescription": "Бонусом можешь воспользоваться там-то...",
+        "itemImage": "img/content/pie.svg",
+        "buy": false,
+        "activ": false,
+        "used": false
+    },
+    {
+        "itemName": "item2",
+        "itemType": "tokens",
+        "itemTitle": "Второй кофе бесплатно",
+        "itemPrize": "380",
+        "itemDescription": "Бонусом можешь воспользоваться там-то...",
+        "itemImage": "img/content/pie.svg",
+        "buy": false,
+        "activ": false,
+        "used": false
+    },
+    {
+        "itemName": "item3",
+        "itemType": "diamond",
+        "itemTitle": "Бесплатный кофе",
+        "itemPrize": "30",
+        "itemDescription": "Бонусом можешь воспользоваться там-то...",
+        "itemImage": "",
+        "buy": false,
+        "activ": false,
+        "used": false
+    },
+    {
+        "itemName": "item4",
+        "itemType": "diamond",
+        "itemTitle": "Второй кофе бесплатно",
+        "itemPrize": "50",
+        "itemDescription": "Бонусом можешь воспользоваться там-то...",
+        "itemImage": "",
+        "buy": false,
+        "activ": false,
+        "used": false
+    }
+]

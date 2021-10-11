@@ -1,0 +1,20 @@
+{
+	"logo": "<img class='header__name-logo' src='img/header/logo-horyzontal.png'>",
+	"logo_in_game": "<img class='header__name-logo mode' src='img/header/logo-horyzontal.png'>",
+	"index_title": "Исакогорский хлеб",
+	"index_description": "<p>Приветствуем вас в игре от доставки пирогов “Исакогорский Хлеб”.<br>Мы приготовили разные подарки за её прохождение.<br><br>Например, вы можете получить несколько бесплатных пирогов. <br>Все это для того,чтобы вы могли понять где производят самые вкусные пироги в городе. <br><br>Мы желаем вам удачи в игре!</p>",
+	"index_image": "img/content/isak_logo.png",
+	"shop_title": "Магазин | Исакогорский хлеб",
+	"game_title": "Игра | Исакогорский хлеб",
+	"records_title": "Рекорды | Исакогорский хлеб",
+	"task_title": "Задания | Исакогорский хлеб",
+	"auth_title": "Авторизация | Исакогорский хлеб",
+	"auth_info": "Чтобы воспользоваться бонусами, авторизуйся в удобном для себя месте",
+	"map_title": "Карта | Исакогорский хлеб",
+	"getprize_title": "Оценка | Исакогорский хлеб",
+	"manual_title": "Обучение | Исакогорский хлеб",
+	"freemode_icon": "freemode.svg",
+	"img_preloader_game": "load.png",
+	"diamond_icon": "new-diamond.svg",
+	"coin_icon": "coin-tokens.svg"
+}

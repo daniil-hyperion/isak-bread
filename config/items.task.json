@@ -1,0 +1,31 @@
+[{
+        "itemName": "item1",
+        "itemType": "addUser",
+        "itemTitle": "Пригласить друга",
+        "itemPrize": "30",
+        "modal": {
+            "description": "",
+            "link": ""
+        },
+        "used": false,
+        "activ": "true"
+    },
+    {
+        "itemName": "item2",
+        "itemType": "openLink",
+        "itemTitle": "Подписаться на группу ВК",
+        "itemPrize": "15",
+        "link": "https://vk.com/im?sel=214017134",
+        "used": false,
+        "activ": "true"
+    },
+    {
+        "itemName": "item3",
+        "itemType": "openLink",
+        "itemTitle": "Подписаться на инстаграмм",
+        "itemPrize": "15",
+        "link": "https://vk.com/im?sel=214017134",
+        "used": false,
+        "activ": "true"
+    }
+]
